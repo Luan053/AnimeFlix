@@ -1,6 +1,142 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --branco: #fff;
+    --cinza: #aaa;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 180px;
+    padding: 25px;
+    margin-left: 16px;
+}
+
+header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    display: flex;
+}
+
+body {
+    background: #191919;
+    color: var(--branco);
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cinza);
+    margin-left: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+}
+
+.imagem-principal {
+    background: url(/assets/kimetsu/fundoprincipal.png);
+    background-size: cover;
+    background-position: 50%;
+    height: 120vh;
+}
+
+.anime-principal {
+    font-size: 16px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.anime-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+    width: 50%;
+    text-shadow: 2px 2px 3px #000;
+}
+
+.titulo {
+    font-size: 20px;
+}
+
+.logokimetsu {
+    width: 200px;
+}
+
+main .container,
+.botoes {
+    margin-left: 40px;
+}
+
+.infos {
+    font-size: 13px;
+}
+
+.botao1 {
+    background: var(--branco);
+    color: #000;
+}
+
+.botao2 {
+    background: linear-gradient(rgba(100, 100, 100, 0.7) 100%, rgba(100, 100, 100, 0.7) 100%);
+    color: var(--branco);
+}
+
+.botao1,
+.botao2 {
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.botao2:hover {
+    background: linear-gradient(rgba(100, 100, 100, 0.25) 100%, rgba(100, 100, 100, 0.25) 100%);
+}
+
+.botao1:hover {
+    background: linear-gradient(rgba(255, 255, 255, 0.7) 100%, rgba(255, 255, 255, 0.7) 100%);
+}
+
+.botao1 i,.botao2 i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.item {
+    height: 100%;
+    width: 100%;
+}
+
+.box-anim {
+    display: block;
+    border-radius: 5px;
+}
+
+.carrosel {
+    margin-top: -190px;
+    margin-left: 40px;
+}
+
+.carrosel p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
