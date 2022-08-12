@@ -71,7 +71,7 @@ header .container {
 
 
 .imagem-principal {
-    background: url(/assets/kimetsu/fundoprincipal.png);
+    background: url(../assets/kimetsu/fundoprincipal.png);
     background-size: cover;
     background-position: 50%;
     height: 100vh;
