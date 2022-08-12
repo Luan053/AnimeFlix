@@ -2,7 +2,7 @@
     --vermelho: #E50914;
     --preto: #141414;
     --branco: #fff;
-    --cinza: #aaa;
+    --cinza: #bbb;
 }
 
 * {
@@ -21,6 +21,8 @@
 header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 body {
@@ -30,27 +32,49 @@ body {
 
 header nav a {
     text-decoration: none;
-    color: var(--cinza);
+    color: var(--branco);
     margin-left: 15px;
     font-size: 0.9rem;
-    font-weight: 600;
+    font-weight: 500;
     transition: all .3s;
 }
 
 header nav a:hover {
-    color: #ccc;
+    color: var(--cinza);
 }
 
 header .container {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    width: 100%;
 }
+
+.perfil {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    column-gap: 20px;
+}
+
+.perfil a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.img-perfil {
+    width: 40px;
+    border-radius: 5px;
+}
+
 
 .imagem-principal {
     background: url(/assets/kimetsu/fundoprincipal.png);
     background-size: cover;
     background-position: 50%;
-    height: 120vh;
+    height: 100vh;
 }
 
 .anime-principal {
@@ -115,7 +139,8 @@ main .container,
     background: linear-gradient(rgba(255, 255, 255, 0.7) 100%, rgba(255, 255, 255, 0.7) 100%);
 }
 
-.botao1 i,.botao2 i {
+.botao1 i,
+.botao2 i {
     margin-right: 10px;
     font-size: 20px;
 }
@@ -131,11 +156,21 @@ main .container,
 }
 
 .carrosel {
-    margin-top: -190px;
+    margin-top: -60px;
     margin-left: 40px;
 }
 
 .carrosel p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.carrosel2 {
+    margin-left: 40px;
+}
+
+.carrosel2 p {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 10px;
