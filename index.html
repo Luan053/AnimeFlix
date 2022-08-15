@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsivo.css">
+    <link rel="stylesheet" href="./css/mobile-bar.css">
 
     <!-- OWL CSS-->
     <link rel="stylesheet" href="./css/owl/owl.carousel.min.css">
@@ -20,20 +21,25 @@
         <header>
             <div class="container">
                 <img class="logo" src="./assets/logo.png" alt="Netflix Logo">
-                <nav class="menus">
-                    <a href="#">Inicio</a>
-                    <a href="#">Dublados</a>
-                    <a href="#">Legendados</a>
-                    <a href="#">Bombando</a>
-                    <a href="#">Minha lista</a>
-                </nav>
+                <nav id="nav">
+                    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                      <span id="hamburger"></span>
+                    </button>
+                    <ul id="menu" role="menu">
+                    <li><a href="/">Inicio</a></li>
+                      <li><a href="/">Dublados</a></li>
+                      <li><a href="/">Legendados</a></li>
+                      <li><a href="/">Bombando</a></li>
+                      <li><a href="/">Minha lista</a></li>
+                    </ul>
+                  </nav>
             </div>
             <div class="perfil">
-                <a href="#">
+                <a class="remover-responsivo" href="#">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </a>
-                <a href="">Infantil</a>
-                <a href="#">
+                <a class="remover-responsivo" href="">Infantil</a>
+                <a class="remover-responsivo" href="#">
                     <i class="fa-solid fa-bell"></i>
                 </a>
                 <a href="#">
@@ -108,6 +114,7 @@
     <script src="./js/owl/jquery.min.js"></script>
     <script src="./js/owl/owl.carousel.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/mobile-bar.js"></script>
 
 </body>
 

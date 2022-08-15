@@ -21,13 +21,15 @@
 header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
     display: flex;
-    width: 100%;
+    width: 100vw;
+    height: 15vh;
     justify-content: flex-end;
 }
 
 body {
     background: #191919;
     color: var(--branco);
+    overflow-x: hidden;
 }
 
 header nav a {
