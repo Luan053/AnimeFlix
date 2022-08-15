@@ -9,9 +9,12 @@
     }
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 450px) {
     .remover-responsivo {
         display: none;
     }
 
+    .carrosel {
+        margin-top: 60px;
+    }
 }
